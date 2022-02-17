@@ -1,0 +1,26 @@
+n=int(input('enter the range of fibonacci number:'))
+a=0
+b=1
+sum=a+b
+print(a,b,end=" ")
+for i in range(n-2):
+    print(a+b,end=" ")
+    a,b=b,a+b
+    sum=sum+b
+    print()
+    print("sum of fibonacci number:",sum)
+
+Output:
+enter the range of fibonacci number:8
+0 1 1 
+sum of fibonacci number: 2
+2 
+sum of fibonacci number: 4
+3 
+sum of fibonacci number: 7
+5 
+sum of fibonacci number: 12
+8 
+sum of fibonacci number: 20
+13 
+sum of fibonacci number: 33
